@@ -1,0 +1,18 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Converter</title>
+</head>
+<body>
+    <h1>PDF to PDF Converter</h1>
+    <form method="POST" action="{{ url_for('convert') }}" enctype="multipart/form-data">
+        <label for="pdf_file">Select PDF File:</label>
+        <input type="file" name="pdf_file" id="pdf_file" accept=".pdf" required>
+        <br>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
